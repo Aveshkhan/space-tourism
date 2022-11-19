@@ -1,9 +1,161 @@
-.home::before{
+/* +++++++++++++++  UTILITES  ++++++++++++++++ */
+
+h1 {
+    font-size: 150px;
+    font-family: 'Bellefair', serif;
+    color: var(--white);
+}
+
+.h2 {
+    font-size: 100px;
+    font-family: 'Bellefair', serif;
+}
+
+.h3 {
+    font-size: 56px;
+    font-family: 'Bellefair', serif;
+}
+
+.h4 {
+    font-size: 32px;
+    font-family: 'Bellefair', serif;
+}
+
+.h5 {
+    font-size: 28px;
+    letter-spacing: 4.75px;
+    color: var(--lightBlue);
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+.subHeading1 {
+    font-size: 28px;
+    font-family: 'Bellefair', serif;
+}
+
+.subHeading2 {
+    font-size: 14px;
+    letter-spacing: 2.35px;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+.p {
+    line-height: 32px;
+    font-size: 18px;
+    color: var(--lightBlue);
+    font-style: normal;
+    font-weight: 400;
+    font-family: 'Barlow', sans-serif;
+}
+
+/* ANCHOR ========================= NAVBAR ==============================*/
+
+.nav_line {
+    position: relative;
+}
+
+.line {
+    background-color: #ffffff;
+    height: 0.5px;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    right: -20px;
+    z-index: 10;
+}
+
+.nav_links {
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(40.7742px);
+    -webkit-backdrop-filter: blur(40.7742px);
+    font-family: 'Barlow Condensed', sans-serif;
+
+}
+
+.navbar .nav_links ul li a {
+    padding: 2.5rem 0;
+    font-size: 16px;
+    letter-spacing: 2.7px;
+    position: relative;
+}
+
+.navbar .nav_links ul li a.active::after {
+    /* border-bottom: 2px solid #fff; */
+    transform: scaleX(1);
+    transform-origin: bottom left;
+    opacity: 1;
+}
+
+.navbar .nav_links ul li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.navbar .nav_links ul li a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: #ffffff;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+    opacity: 0.5;
+}
+
+/* ANCHOR ========================= HOME ==============================*/
+
+.home::before {
     content: "";
     background: url(./assets//home/background-home-desktop.jpg) no-repeat center center/cover;
-    position:absolute;
-    top:0px;
-    left:0px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
     height: 100%;
+    min-height: 800px;
     width: 100%;
+    z-index: -10;
 }
+
+.exploreBtn{
+    background-color: var(--white);
+    border-radius: 50%;
+    height: 274px;
+    width: 274px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--dark);
+    font-family: 'Bellefair', serif;
+    font-size: 32px;
+    position: relative;
+    cursor: pointer;
+}
+
+.exploreBtn::before{
+    content: '';
+    background-color: var(--white);
+    border-radius: 50%;
+    height: 274px;
+    width: 274px;
+    opacity: 0.1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: transform 0.8s cubic-bezier(.42,.97,.52,1.49);
+}
+
+.exploreBtn:hover:before{
+    transform: scale(1.5);
+}
+
+/* ANCHOR ========================= destination ==============================*/
+
+
+/* ANCHOR ========================= CREW ==============================*/
+
+
+/* ANCHOR ========================= TECHNOLOGY ==============================*/

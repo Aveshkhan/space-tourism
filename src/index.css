@@ -1,14 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200;300;400;500;600;700&family=Bellefair&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Barlow:wght@400;500;600;700&family=Bellefair&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 body {
   margin: 0;
-  font-family: 'Barlow Condensed', sans-serif;
   font-family: 'Bellefair', serif;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-family: 'Barlow', sans-serif;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+:root{
+  --dark: #0B0D17;
+  --lightBlue: #D0D6F9;
+  --white: #FFFFFF;
 }
