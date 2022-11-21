@@ -1,5 +1,7 @@
 /* +++++++++++++++  UTILITES  ++++++++++++++++ */
-
+.container{
+    max-width: 100% !important;
+}
 h1 {
     font-size: 150px;
     font-family: 'Bellefair', serif;
@@ -36,6 +38,7 @@ h1 {
 .subHeading2 {
     font-size: 14px;
     letter-spacing: 2.35px;
+    color: var(--lightBlue);
     font-family: 'Barlow Condensed', sans-serif;
 }
 
@@ -62,6 +65,7 @@ h1 {
     top: 50%;
     right: -20px;
     z-index: 10;
+    opacity: 0.25;
 }
 
 .nav_links {
@@ -96,7 +100,7 @@ h1 {
     position: absolute;
     width: 100%;
     transform: scaleX(0);
-    height: 2px;
+    height: 3px;
     bottom: -2px;
     left: 0;
     background-color: #ffffff;
@@ -109,7 +113,7 @@ h1 {
 
 .home::before {
     content: "";
-    background: url(./assets//home/background-home-desktop.jpg) no-repeat center center/cover;
+    background: url(./assets/home/background-home-desktop.jpg) no-repeat center center/cover;
     position: absolute;
     top: 0px;
     left: 0px;
@@ -153,7 +157,62 @@ h1 {
 }
 
 /* ANCHOR ========================= destination ==============================*/
+.destination{
+    overflow: hidden;
+}
+.destination::before{
+    content: "";
+    background: url(./assets/destination/background-destination-desktop.jpg) no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    min-height: 800px;
+    width: 100%;
+    z-index: -10;
+}
 
+.tab_links ul li{
+    font-family: 'Barlow Condensed';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+    color: #D0D6F9; 
+    position: relative;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.tab_links ul li::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: -2px;
+    left: 0;
+    background-color: #ffffff;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+    opacity: 0.5;
+}
+
+.tab_links ul li:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.tab_links ul li.active::after {
+    /* border-bottom: 2px solid #fff; */
+    transform: scaleX(1);
+    transform-origin: bottom left;
+    opacity: 1;
+}
+
+.planetDetails{
+    border-bottom: .5px solid #383B4B;
+}
 
 /* ANCHOR ========================= CREW ==============================*/
 

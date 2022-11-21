@@ -13,11 +13,11 @@ const Navbar = () => {
                 <div className="line"></div>
             </div>
             <div className="nav_links pl-12 basis-7/12 pr-20 h-full">
-                <ul className="flex text-white items-center justify-evenly">
-                    <li className='py-10'><NavLink to="/"><span className='font-semibold mr-2'>00</span> HOME</NavLink></li>
-                    <li className='py-10'><NavLink to="/destination"><span className='font-semibold mr-2'>01</span> DESTINATION</NavLink></li>
-                    <li className='py-10'><NavLink to="/crew"><span className='font-semibold mr-2'>02</span> CREW</NavLink></li>
-                    <li className='py-10'><NavLink to="/technology"><span className='font-semibold mr-2'>03</span> TECHNOLOGY</NavLink></li>
+                <ul className="flex text-white items-center justify-evenly gap-x-1.5">
+                    <li className='py-10'><NavLink to="/"><span className='font-bold mr-2'>00</span> HOME</NavLink></li>
+                    <li className='py-10'><NavLink to="/destination"><span className='font-bold mr-2'>01</span> DESTINATION</NavLink></li>
+                    <li className='py-10'><NavLink to="/crew"><span className='font-bold mr-2'>02</span> CREW</NavLink></li>
+                    <li className='py-10'><NavLink to="/technology"><span className='font-bold mr-2'>03</span> TECHNOLOGY</NavLink></li>
                 </ul>
             </div>
         </nav>

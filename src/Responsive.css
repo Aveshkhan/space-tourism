@@ -1,24 +1,37 @@
+@media (min-width: 1536px) {
+    .container {
+        max-width: 2000px;
+    }
+}
 
 /* // Extra large devices (large desktops, 1200px and up) */
-@media (max-width: 1399.98px) {  }
+@media (max-width: 1399.98px) {}
 
 /* // Large devices (desktops, 992px and up) */
-@media (max-width: 1199.98px) {  }
+@media (max-width: 1199.98px) {}
 
 /* // Medium devices (tablets, 768px and up) */
 @media (max-width: 991.98px) {
-    .home::before{
-        background: url(./assets//home/background-home-tablet.jpg) no-repeat center center/cover;
+    .home::before {
+        background: url(./assets/home/background-home-tablet.jpg) no-repeat center center/cover;
     }
- }
+
+    .destination::before {
+        background: url(./assets/destination/background-destination-tablet.jpg) no-repeat center center/cover;
+    }
+}
 
 /* // Small devices (landscape phones, 576px and up) */
-@media (max-width: 767.98px) {  }
+@media (max-width: 767.98px) {}
 
 
 /* // Extra small devices (portrait phones, less than 576px) */
-@media (max-width: 575.98px) { 
-    .home::before{
+@media (max-width: 575.98px) {
+    .home::before {
         background: url(./assets//home/background-home-mobile.jpg) no-repeat center center/cover;
     }
- }
+
+    .destination::before {
+        background: url(./assets/destination/background-destination-mobile.jpg) no-repeat center center/cover;
+    }
+}

@@ -7,7 +7,7 @@ const Home = () => {
       <div className="home" id="home">
         <Navbar />
 
-        <div className="container mx-auto text-white h-full flex justify-between items-center pt-32 pb-24">
+        <div className="container mx-auto text-white h-full flex justify-between items-center pt-36 pb-24 gap-8">
           <div className="leftCol basis-1/2 px-16 h-full">
             <h5 className='h5'>SO, YOU WANT TO TRAVEL TO</h5>
             <h1 className='h1'>SPACE</h1>

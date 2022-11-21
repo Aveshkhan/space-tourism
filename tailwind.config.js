@@ -9,10 +9,11 @@ module.exports = {
       padding: {
         DEFAULT: '1rem',
         sm: '2rem',
-        lg: '4rem',
+        lg: '3rem',
         xl: '5rem',
-        '2xl': '6rem',
+        '2xl': '7rem',
       },
+      center: true,
     },
   },
   plugins: [],
