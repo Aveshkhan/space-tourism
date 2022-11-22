@@ -55,17 +55,17 @@ const Destination = () => {
       <div className="destination" id="destination">
         <Navbar />
 
-        <div className="container mx-auto text-white h-full flex flex-col pt-14 ">
-          <h5 className='destinationHeading h5 pl-20'><span className='font-bold opacity-25	mr-2'>01</span> PICK YOUR DESTINATION</h5>
+        <div className="container mx-auto text-white h-full flex flex-col pt-12 ">
 
-          <div className="flex justify-between items-start gap-8 mt-12">
-            <div className="leftCol basis-1/2 h-full flex justify-center items-center">
+          <div className="flex justify-between items-start gap-8 ">
+            <div className="leftCol basis-1/2 h-full flex flex-col justify-center items-center">
+            <h5 className='destinationHeading w-full pl-24 h5 mb-8'><span className='font-bold opacity-25	mr-2'>01</span> PICK YOUR DESTINATION</h5>
               <div className="planetImg p-4">
                 <img src={planetName === 'Moon' ? moonImg : planetName === 'Mars' ? marsImg : planetName === 'Europa' ? europaImg : planetName === 'Titan' ? titanImg : undefined } alt="" />
               </div>
             </div>
 
-            <div className="rightCol basis-1/2 ">
+            <div className="rightCol basis-1/2 pt-16">
               <div className="tab_links mb-5">
                 <ul className='flex items-center gap-x-10'>
                   <li onClick={getMoonData} className={`uppercase ${planetName === "Moon" ? "active" : "" }`}>Moon</li>

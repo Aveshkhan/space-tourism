@@ -157,9 +157,6 @@ h1 {
 }
 
 /* ANCHOR ========================= destination ==============================*/
-.destination{
-    overflow: hidden;
-}
 .destination::before{
     content: "";
     background: url(./assets/destination/background-destination-desktop.jpg) no-repeat center center/cover;
@@ -216,5 +213,62 @@ h1 {
 
 /* ANCHOR ========================= CREW ==============================*/
 
+.crew::before{
+    content: "";
+    background: url(./assets/crew/background-crew-desktop.jpg) no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    min-height: 860px;
+    width: 100%;
+    z-index: -10;
+}
+
+.crewTab_links ul li{
+    height: 15px;
+    width: 15px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    opacity: 0.2;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+.crewTab_links ul li.active{
+    opacity: 1;
+}
+
+.crewImg{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.crewImg img{
+    height: 100%;
+    width: 446px;
+    z-index: -1;
+}
+
 
 /* ANCHOR ========================= TECHNOLOGY ==============================*/
+
+.technology::before{
+    content: "";
+    background: url(./assets/technology/background-technology-desktop.jpg) no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    min-height: 800px;
+    width: 100%;
+    z-index: -10;
+}
+
+
+
+
+

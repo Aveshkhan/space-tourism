@@ -19,6 +19,12 @@
     .destination::before {
         background: url(./assets/destination/background-destination-tablet.jpg) no-repeat center center/cover;
     }
+    .crew::before {
+        background: url(./assets/crew/background-crew-tablet.jpg) no-repeat center center/cover;
+    }
+    .technology::before {
+        background: url(./assets/technology/background-technology-tablet.jpg) no-repeat center center/cover;
+    }
 }
 
 /* // Small devices (landscape phones, 576px and up) */
@@ -33,5 +39,11 @@
 
     .destination::before {
         background: url(./assets/destination/background-destination-mobile.jpg) no-repeat center center/cover;
+    }
+    .crew::before {
+        background: url(./assets/crew/background-crew-mobile.jpg) no-repeat center center/cover;
+    }
+    .technology::before {
+        background: url(./assets/technology/background-technology-mobile.jpg) no-repeat center center/cover;
     }
 }
