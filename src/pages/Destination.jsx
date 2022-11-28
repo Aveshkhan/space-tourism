@@ -56,12 +56,11 @@ const Destination = () => {
         <Navbar />
 
         <div className="container mx-auto text-white h-full flex flex-col pt-12 ">
-
-          <div className="flex justify-between items-start gap-8 ">
+        <h5 className='destinationHeading heading w-full pl-24 h5 mb-8'><span className='font-bold opacity-25	mr-2'>01</span> PICK YOUR DESTINATION</h5>
+          <div className="flex justify-between items-start gap-8 destinationContent">
             <div className="leftCol basis-1/2 h-full flex flex-col justify-center items-center">
-            <h5 className='destinationHeading w-full pl-24 h5 mb-8'><span className='font-bold opacity-25	mr-2'>01</span> PICK YOUR DESTINATION</h5>
               <div className="planetImg p-4">
-                <img src={planetName === 'Moon' ? moonImg : planetName === 'Mars' ? marsImg : planetName === 'Europa' ? europaImg : planetName === 'Titan' ? titanImg : undefined } alt="" />
+                <img src={planetName === 'Moon' ? moonImg : planetName === 'Mars' ? marsImg : planetName === 'Europa' ? europaImg : planetName === 'Titan' ? titanImg : '' } alt="" />
               </div>
             </div>
 

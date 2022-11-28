@@ -211,6 +211,7 @@ h1 {
     border-bottom: .5px solid #383B4B;
 }
 
+
 /* ANCHOR ========================= CREW ==============================*/
 
 .crew::before{
@@ -268,7 +269,41 @@ h1 {
     z-index: -10;
 }
 
+.techLinks{
+    border-radius: 50%;
+    color: var(--white);
+    height: 80px;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Bellefair';
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 37px;
+    text-align: center;
+    letter-spacing: 2px;    
+    border: 1px solid #383B4B;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
 
+.techLinks.active{
+    background-color: var(--white);
+    color: var(--dark);
+    opacity: 1;
+    border: 1px solid #ffffff;
+}
 
+.techLinks:hover{
+    border: 1px solid #ffffff;
+}
 
+.techImage{
+    height: 100%;
+    width: 440px;
+}
 
+.technology .rightCol{
+    padding: 2rem 0;
+}
