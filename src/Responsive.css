@@ -245,7 +245,16 @@
 }
 
 /* // Small devices (landscape phones, 576px and up) */
-@media (max-width: 767.98px) {}
+@media (max-width: 767.98px) {
+    .navbar{
+        display: none;
+    }
+}
+@media (min-width: 767.98px) {
+    .mobileNav{
+        display: none;
+    }
+}
 
 
 /* // Extra small devices (portrait phones, less than 576px) */
