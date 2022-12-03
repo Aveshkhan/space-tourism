@@ -58,7 +58,7 @@ const Crew = () => {
                 </div>
               </div>
             </div>
-            <div className="rightCol basis-1/2">
+            <div className="rightCol basis-1/2 border-b border-[#383B4B]">
               <div className="crewImg">
                 <img src={crewName === 'Douglas Hurley' ? crew1 : crewName === 'Mark Shuttleworth' ? crew2 : crewName === 'Victor Glover' ? crew3 : crewName === 'Anousheh Ansari' ? crew4 : ''} alt="crewImg" />
               </div>

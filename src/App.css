@@ -124,8 +124,9 @@ h1 {
     bottom: 0;
     height: 100%;
     min-height: 100%;
+    max-height: max-content;
     width: 0px;
-    transition: all .5s linear;
+    transition: all .5s ease-in-out;
 }
 
 .mSideNav.active{

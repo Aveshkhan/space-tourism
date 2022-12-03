@@ -15,7 +15,9 @@ const Navbar = () => {
         <>
             <nav className='navbar flex items-center justify-between pl-12 mt-10 h-full'>
                 <div className="nav_logo basis-1/12">
-                    <img src={logo} alt="logo" />
+                    <NavLink to="/">
+                        <img src={logo} alt="logo" />
+                    </NavLink>
                 </div>
                 <div className="nav_line basis-4/12">
                     <div className="line"></div>
@@ -32,7 +34,9 @@ const Navbar = () => {
 
             <nav className={`mobileNav flex items-center justify-between p-6`}>
                 <div className="nav_logo" onClick={navToggle}>
-                    <img src={logo} alt="logo" />
+                    <NavLink to="/">
+                        <img src={logo} alt="logo" />
+                    </NavLink>                
                 </div>
                 <div className="menu z-20">
                     <Hamburger color="#ffffff" toggled={isOpen} toggle={setOpen} />

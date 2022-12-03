@@ -281,12 +281,17 @@
     .destination .rightCol p{
         font-size: 15px;
     }
+    .destination .rightCol .tab_links ul{
+        gap: 0.5rem;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .destination .rightCol .tab_links{
+        width: 100%;
+    }
     .planetStats {
         gap: 1.5rem;
         flex-direction: column;
-    }
-    .destination::before{
-        min-height: 1000px;
     }
     .crew .crewContainer{
         flex-direction: column-reverse;
@@ -306,12 +311,38 @@
     }
     .crew .leftCol p{
         font-size: 15px;
+        margin-bottom: 0;
     }
     .crewLinkTop{
         display: block;
     }
     .crewLinkBottom{
         display: none;
+    }
+    .technology .heading{
+        margin-left: 0;
+    }
+    .techLinks{
+        height: 40px;
+        width: 40px;
+        font-size: 16px;
+    }
+    .tech_tabLinks{
+        gap: 1.5rem;
+    } 
+    .tech-content h5{
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+    .tech-content h3{
+        font-size: 24px;
+    }
+    .tech-content p{
+        font-size: 15px;
+        padding: 0;
+    }
+    .technology .leftCol{
+        gap: 2rem;
     }
 }
 @media (min-width: 767.98px) {
@@ -330,17 +361,32 @@
         background: url(./assets//home/background-home-mobile.jpg) no-repeat center center/cover;
         min-height: 820px;
     }
+    .home .mSideNav{
+        min-height: 820px;
+    }
 
     .destination::before {
         background: url(./assets/destination/background-destination-mobile.jpg) no-repeat center center/cover;
+        min-height: 1000px;
     }
-
+    .destination .mSideNav{
+        min-height: 1000px;
+    }
     .crew::before {
         background: url(./assets/crew/background-crew-mobile.jpg) no-repeat center center/cover;
-        min-height: 900px;
+        min-height: 850px;
+    }
+    .crew .mSideNav{
+        min-height: 850px;
     }
 
     .technology::before {
         background: url(./assets/technology/background-technology-mobile.jpg) no-repeat center center/cover;
+    }
+    .technology .mSideNav{
+        min-height: 800px;
+    }
+    .nav_logo img{
+        height: 40px;
     }
 }

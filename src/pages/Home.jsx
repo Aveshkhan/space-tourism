@@ -1,5 +1,6 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
+import { NavLink } from 'react-router-dom'
 
 const Home = () => {
   return (
@@ -14,7 +15,7 @@ const Home = () => {
             <p className='p pr-10'>Let's face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it. Well sit back, and relax because we'll give you a truly out of this world experience!</p>
           </div>
           <div className="rightCol basis-1/2 flex justify-center items-center">
-            <div className="exploreBtn">EXPLORE</div>
+            <NavLink to="destination" className="exploreBtn">EXPLORE</NavLink>
           </div>
         </div>
       </div>

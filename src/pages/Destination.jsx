@@ -64,7 +64,7 @@ const Destination = () => {
               </div>
             </div>
 
-            <div className="rightCol basis-1/2 pt-16">
+            <div className="rightCol basis-1/2 pt-4">
               <div className="tab_links mb-5">
                 <ul className='flex items-center gap-x-10'>
                   <li onClick={getMoonData} className={`uppercase ${planetName === "Moon" ? "active" : "" }`}>Moon</li>
