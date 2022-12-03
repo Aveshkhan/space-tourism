@@ -32,7 +32,7 @@ const Crew = () => {
         <div className="container mx-auto pt-12  text-white">
           <h5 className='destinationHeading heading w-full pl-24 h5 mb-8'><span className='font-bold opacity-25	mr-2'>02</span> MEET YOUR CREW</h5>
 
-          <div className="crewContainer flex justify-between items-end gap-8">
+          <div className="crewContainer flex justify-between items-center gap-8">
             <div className="leftCol basis-1/2 h-full flex flex-col justify-between items-start pl-24">
               {/* <h5 className='destinationHeading heading w-full h5 mb-24'><span className='font-bold opacity-25	mr-2'>02</span> MEET YOUR CREW</h5> */}
               <div className='crewContent'>
