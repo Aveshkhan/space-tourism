@@ -150,10 +150,14 @@
         font-size: 20px;
     }
 
-    .crew .container{
+    .crew .crewContainer{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+
+    .crew .heading{
+        padding-left: 0;
     }
 
     .crew .leftCol{
@@ -249,9 +253,72 @@
     .navbar{
         display: none;
     }
+    .home h1{
+        font-size: 80px;
+    }
+    .home h5{
+        font-size: 16px;
+    }
+    .home .leftCol p {
+        padding: 0;
+        font-size: 15px;
+    }
+    .exploreBtn, .exploreBtn::before{
+        height: 150px;
+        width: 150px;
+        font-size: 20px;
+    }
+    .planetImg img{
+        height: 170px;
+    }
+    .heading{
+        text-align: center;
+        font-size: 16px;
+    }
+    .destination .rightCol h2{
+        font-size: 56px;
+    }
+    .destination .rightCol p{
+        font-size: 15px;
+    }
+    .planetStats {
+        gap: 1.5rem;
+        flex-direction: column;
+    }
+    .destination::before{
+        min-height: 1000px;
+    }
+    .crew .crewContainer{
+        flex-direction: column-reverse;
+    }
+    .crewImg{
+        height: 250px;
+    }
+
+    .crew .rightCol{
+        border-bottom: 2px solid #383B4B;
+    }
+    .crewContent h4{
+        font-size: 16px;
+    }
+    .crewContent h3{
+        font-size: 24px;
+    }
+    .crew .leftCol p{
+        font-size: 15px;
+    }
+    .crewLinkTop{
+        display: block;
+    }
+    .crewLinkBottom{
+        display: none;
+    }
 }
 @media (min-width: 767.98px) {
     .mobileNav{
+        display: none;
+    }
+    .mSideNav {
         display: none;
     }
 }
@@ -261,6 +328,7 @@
 @media (max-width: 575.98px) {
     .home::before {
         background: url(./assets//home/background-home-mobile.jpg) no-repeat center center/cover;
+        min-height: 820px;
     }
 
     .destination::before {
@@ -269,6 +337,7 @@
 
     .crew::before {
         background: url(./assets/crew/background-crew-mobile.jpg) no-repeat center center/cover;
+        min-height: 900px;
     }
 
     .technology::before {

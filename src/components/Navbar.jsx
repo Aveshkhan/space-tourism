@@ -6,6 +6,11 @@ import logo from "../assets/shared/logo.svg"
 const Navbar = () => {
     const [isOpen, setOpen] = useState(false)
 
+    const navToggle = () => {
+        if (isOpen === true) {
+
+        }
+    }
     return (
         <>
             <nav className='navbar flex items-center justify-between pl-12 mt-10 h-full'>
@@ -25,24 +30,24 @@ const Navbar = () => {
                 </div>
             </nav>
 
-            <nav className='mobileNav flex items-center justify-between p-8'>
-                <div className="nav_logo">
+            <nav className={`mobileNav flex items-center justify-between p-6`}>
+                <div className="nav_logo" onClick={navToggle}>
                     <img src={logo} alt="logo" />
                 </div>
-                <div className="menu">
+                <div className="menu z-20">
                     <Hamburger color="#ffffff" toggled={isOpen} toggle={setOpen} />
                 </div>
-                <div className="mSideNav">
-                    <div className="sideNavLink">
-                    <ul className="flex flex-col text-white items-start justify-evenly gap-x-1.5">
-                        <li className='py-10'><NavLink to="/"><span className='font-bold mr-2'>00</span> HOME</NavLink></li>
-                        <li className='py-10'><NavLink to="/destination"><span className='font-bold mr-2'>01</span> DESTINATION</NavLink></li>
-                        <li className='py-10'><NavLink to="/crew"><span className='font-bold mr-2'>02</span> CREW</NavLink></li>
-                        <li className='py-10'><NavLink to="/technology"><span className='font-bold mr-2'>03</span> TECHNOLOGY</NavLink></li>
-                    </ul>
-                    </div>
-                </div>
             </nav>
+            <div className={`mSideNav z-10 ${isOpen === true ? "active" : ""}`}>
+                <div className={`sideNavLink ${isOpen === true ? "active" : ""}`}>
+                    <ul className={`flex flex-col text-white items-start justify-evenly gap-x-1.5 ${isOpen === true ? "active" : ""}`}>
+                        <li className='py-2 my-3'><NavLink to="/"><span className='font-bold mr-2'>00</span> HOME</NavLink></li>
+                        <li className='py-2 my-3'><NavLink to="/destination"><span className='font-bold mr-2'>01</span> DESTINATION</NavLink></li>
+                        <li className='py-2 my-3'><NavLink to="/crew"><span className='font-bold mr-2'>02</span> CREW</NavLink></li>
+                        <li className='py-2 my-3'><NavLink to="/technology"><span className='font-bold mr-2'>03</span> TECHNOLOGY</NavLink></li>
+                    </ul>
+                </div>
+            </div>
         </>
     )
 }
